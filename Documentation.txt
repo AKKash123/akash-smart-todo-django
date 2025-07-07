@@ -1,0 +1,19 @@
+
+Step1:Paste your Django-key
+step2:make DEBUG is True
+step3:put your ai api keyYour Key goes here
+The above things is added in the dot env file to inside the smart-todo-app/backend then run the app 
+To execute the app
+step1: use cd backend to go inside the the backend folder
+step 2 : use > python manage.py runserver 
+to start server
+step3: add another terminal to move inside the frontend folder : cd frontend
+step4: use> npm start
+To start the front end 
+ 
+Sample ai suggestion 
+User Input: "I have back-to-back meetings this week."
+AI Suggestion:
+  → Mark critical meetings only.
+  → Block focus time on calendar.
+  → Suggest batching similar tasks post-meetings.

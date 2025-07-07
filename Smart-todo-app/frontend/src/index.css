@@ -1,0 +1,113 @@
+
+:root {
+  --bg-light: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  --bg-dark: linear-gradient(135deg, #1e1e2f, #121212);
+  --text-light: #111;
+  --text-dark: #f1f1f1;
+  --primary: #4f46e5;
+  --success: #22c55e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: var(--bg-light);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.container.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.add-button, .suggest-button, .theme-toggle {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.add-button {
+  background-color: var(--primary);
+  color: white;
+}
+
+.suggest-button {
+  background-color: var(--success);
+  color: white;
+}
+
+.theme-toggle {
+  background-color: transparent;
+  border: 2px solid currentColor;
+  margin-top: 1rem;
+  color: inherit;
+}
+
+.suggestion {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--success);
+  text-align: center;
+}
+
+.task-list {
+  margin-top: 1.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.task-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  backdrop-filter: blur(6px);
+  transition: 0.3s;
+}
+
+.dark .task-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: #444;
+}
